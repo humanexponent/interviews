@@ -13,8 +13,15 @@ We'll be happy to evaluate and give feedback on the whole project once you're do
 
 ## Setup and submission
 
+### Github setup
+
 Please create a private Github repository and add us as collaborators (work@humanexponent.com) once you're ready to share.
 If you encounter any issues with the submission please email us.
+
+### App setup
+
+Starter: https://github.com/facebook/create-react-app
+Please include any extra instructions how to run your app in a `README.md` file if necessary
 
 ## Screens
 
