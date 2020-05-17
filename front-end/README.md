@@ -50,7 +50,9 @@ If you encounter any issues with the submission please email us.
 
 ## Must have
 
-1. React & Redux
+1. Use React & Redux.
+2. Create a `create-react-app` so we can run your code!
+3. Use of react-router for multiple pages.
 
 ## Good to have
 
@@ -58,7 +60,8 @@ If you encounter any issues with the submission please email us.
 2. UI kit for styles (or styled-components)
 3. Tests
 4. Exception handling
-5. Deployed app
+5. Usage of modern js functionality (ES6+)
+6. Deployed app
 
 ## What will we be paying attention to:
 * Can we run your code?
