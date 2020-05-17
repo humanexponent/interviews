@@ -1,6 +1,6 @@
 # Front-End Developer Recruitment Task
 
-Thank you for taking time to solve this assignment! We're excited to see what you will build!
+Thank you for taking time to solve this assignment! We're excited to see what you will build and hope you'll have some time along the way!
 
 ## Introduction
 Your task is to implement a React app where users can solve personality tests and get feedback on their answers.
@@ -13,7 +13,7 @@ We'll be happy to evaluate and give feedback on the whole project once you're do
 
 ## Setup and submission
 
-Please create a private Github repository and add us as collaborators (work@humanexponent.com) once you're ready.
+Please create a private Github repository and add us as collaborators (work@humanexponent.com) once you're ready to share.
 If you encounter any issues with the submission please email us.
 
 ## Screens
