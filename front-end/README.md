@@ -20,8 +20,8 @@ If you encounter any issues with the submission please email us.
 
 ### App setup
 
-Starter: https://github.com/facebook/create-react-app
-Please include any extra instructions how to run your app in a `README.md` file if necessary
+* Starter: https://github.com/facebook/create-react-app
+* Please include any extra instructions how to run your app in a `README.md` file if necessary
 
 ## Screens
 
