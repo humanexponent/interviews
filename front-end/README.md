@@ -12,7 +12,7 @@ Your task is to implement a React app where users can solve personality tests an
 * List of personality tests to solve.
 * On `Start` click redirect to `Personality Test` page.
 * You can assume that each test has the same name, questions and possible answers,
- but differs only by an id (e.g. Personality Test #1 vs Personality Test #2).
+ but differs only by an id (e.g. `Personality Test #1` vs `Personality Test #2`).
 
 ### Personality Test Page
 
