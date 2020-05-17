@@ -1,6 +1,6 @@
 # Front-End Developer Recruitment Task
 
-Thank you for taking time to solve this assignment! We're excited to see what you will build and hope you'll have some time along the way!
+Thank you for taking time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
 
 ## Introduction
 Your task is to implement a React app where users can solve personality tests and get feedback on their answers.
