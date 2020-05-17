@@ -58,8 +58,7 @@ If you encounter any issues with the submission please email us.
 ## Must have
 
 1. Use React & Redux.
-2. Create a `create-react-app` so we can run your code!
-3. Use of react-router for multiple pages.
+2. Use of react-router for multiple pages.
 
 ## Good to have
 
