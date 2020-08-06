@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { call, put, takeLatest } from 'redux-saga/effects'
 
-import { tests } from "../mockData";
 import { GET_TESTS } from "../actions/constants";
 import { getTestsSuccess } from '../actions/index'
 
