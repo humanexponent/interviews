@@ -25,7 +25,7 @@ const Home = ({ tests, getTests }) => {
     <div className={classes.root}>
       {tests.length === 0
         ? <div>No available tests</div>
-        : tests.map((test) => (<Tile {...test} key={test.id} />))
+        : tests.map((test) => (<Tile {...test} key={test._id} />))
       }
     </div>
   );
