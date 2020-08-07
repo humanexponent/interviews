@@ -3,7 +3,7 @@
 Thank you for taking time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
 
 ## Introduction
-Your task is to implement a React app where users can solve personality tests and get feedback on their answers.
+Your task is to implement a MERN stack app where users can solve personality tests and get feedback on their answers.
 
 We don't expect you to spend more than `2 hours` on this assignment. We expect the basic functionality to be there within
 this time frame.
@@ -23,8 +23,25 @@ If you encounter any issues with the submission please email us.
 * Clone current repository and use it as the starter.
 * Please include any extra instructions how to run your app in a `README.md` file if necessary
 
-## Screens
+## Task
 
+### Psychometric test
+
+Consider having a standard psychometric test.
+Test consists of multiple questions and each question has a set of possible answers.
+Tests such as Big-5 (measuring personality scores, such as: Extraversion or Agreeableness) do not have a correct answer and each answer has some associated value e.g. answer representing option 'Strongly disagree' has value 1 and option 'Strongly Agree' has value 5.
+For simplicity let's assume that each score (extraversion, agreeableness, etc.) is calculated as the average of answers used for calculating this score. 
+Obviously, if we always display the same questions some users would try to game the test and get scores which would satisfy them. 
+To make their cheating more difficult we have a bigger set of questions than it's required by test. For example for the example test, which requires only 10 questions, we have 24 possible questions. 
+Additional feature would be to randomly shuffle quiz questions. 
+
+Your task is to generate a whole quiz with randomly picked questions in each index and then randomly shuffle quiz questions and pass them to front end. The way you structure quiz object (sent as a response) is up to you, but make it a single object that holds both questions and answers
+
+After user completes the test, send it to backend. Again, structure of this post request is up to you. Then calculate scores in the backend given information from quizTraits about which questions are needed to calculate numerical scores. Then, on the frontend, display these scores on a new results page in a simple trait:numericalScore format.
+
+For example - if user answers 'Disagree' and 'Neither' to questions measuring Openness - he should see "Openness: 25%" on the result page. Why 25%? The average of his answers (0 and 1) is 0.5 which is 25% out of the highest possible score, which is 2.
+
+An example data is available in mockedData.js, please use it as a mocked database.
 
 
 ## Good to have
