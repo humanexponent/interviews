@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./containers/home/home";
+import Test from "./containers/test/test";
 
 const useStyles = makeStyles({
   root: {
@@ -22,6 +23,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path={"/personality-test/:id"} component={Test} />
         </Switch>
       </Router>
     </div>

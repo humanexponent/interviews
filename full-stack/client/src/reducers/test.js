@@ -1,20 +1,20 @@
 
-import { GET_TESTS, GET_TESTS_SUCCESS } from "../actions/constants";
+import { GET_TEST, GET_TEST_SUCCESS } from "../actions/constants";
 
 const initialState = {
-  tests: null,
+  test: null,
   loading: false
 }
 
 const homeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_TESTS_SUCCESS:
+    case GET_TEST_SUCCESS:
       return {
         ...state,
         loading: false,
-        tests: action.payload
+        test: action.payload
       };
-    case GET_TESTS:
+    case GET_TEST:
       return {
         ...state,
         loading: true

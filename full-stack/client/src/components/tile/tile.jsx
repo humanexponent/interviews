@@ -9,7 +9,7 @@ import { useStyles } from "./styles.js";
 
 import Link from "../link";
 
-const Tile = ({_id, quizTitle}) => {
+const Tile = ({_id, title}) => {
   const classes = useStyles();
 
   return (
@@ -18,7 +18,7 @@ const Tile = ({_id, quizTitle}) => {
       className={classes.root}
     >
       <CardContent>
-        <div className={classes.label}>{quizTitle}</div>
+        <div className={classes.label}>{title}</div>
       </CardContent>
       <CardActions className={classes.actions}>
         <Link to={`/personality-test/${_id}`}>
