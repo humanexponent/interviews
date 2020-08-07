@@ -24,8 +24,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   res.json({
     /* Return single test with questions and answers */
-  
-});
+  });
 });
 
 module.exports = router
