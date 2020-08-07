@@ -34,7 +34,7 @@ Obviously, if we always display the same questions some users would try to game 
 To make their cheating more difficult we have a bigger set of questions than it's required by test. For example for the example test, which requires only 10 questions, we have 24 possible questions.
 Additional feature would be to randomly shuffle quiz questions.
 
-Your task is to generate a whole quiz with randomly picked questions in each index and then randomly shuffle quiz questions and pass them to front end. The way you structure quiz object (sent as a response) is up to you, but make it a single object that holds both questions and answers
+Your task is to generate a whole quiz with randomly picked questions in each index and then randomly shuffle quiz questions and pass them to front end. The way you structure quiz object (sent as a response) is up to you, but make it a single object that holds basic quiz data and both questions and answers
 
 After user completes the test, send it to backend. Again, structure of this post request is up to you. Then calculate scores in the backend given information from quizTraits about which questions are needed to calculate numerical scores. Then, on the frontend, display these scores on a new results page in a simple trait:numericalScore format.
 
