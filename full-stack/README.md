@@ -30,7 +30,7 @@ Your task is to build a simple psychometric quiz.
 A test consists of multiple questions and each question has a set of possible answers.
 
 There's no one correct answer to a personality test question.
-Each possible answer has a corresponding value, e.g. 'Strongly disagree' has a value of `1` and 'Strongly Agree' has a value of `5`.
+Each possible answer has a corresponding value, e.g. 'Strongly disagree' has a value of `0` and 'Strongly Agree' has a value of `4`.
 Let's also assume that each personality score is calculated as the average of all the answers related to it.
 
 Notice that displaying the same questions in the same order may encourage some users to game the system and pick the answers that lead to their desired score values.
