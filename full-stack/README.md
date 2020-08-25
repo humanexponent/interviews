@@ -44,6 +44,8 @@ Once you pick the questions in the index you should also randomly shuffle quiz q
 
 The way you structure the quiz object (sent as a response) is up to you, but make it a single object that holds basic quiz data and both questions and answers.
 
+Send quiz data as a response and display it in front end (inside Test component) as a set of questions and possible answers that user can answer.
+
 ## Task [Second part]
 
 After user completes the test, send it to the backend. Again, the structure of this post request is up to you.
