@@ -25,7 +25,7 @@ If you encounter any issues with the submission please email us.
 * Run `npm install` in main folder and client folder to install dependencies.
 * Run `npm run dev` to run the app locally.
 
-## Task
+## Task [First part]
 
 ### Psychometric test
 
@@ -43,6 +43,11 @@ Your task is to generate a personality quiz with randomly picked questions in ea
 Once you pick the questions in the index you should also randomly shuffle quiz questions and pass them to the front end.
 
 The way you structure the quiz object (sent as a response) is up to you, but make it a single object that holds basic quiz data and both questions and answers.
+
+Send quiz data as a response and display it in front end (inside Test component) as a set of questions and possible answers that user can answer.
+
+## Task [Second part]
+
 After user completes the test, send it to the backend. Again, the structure of this post request is up to you.
 Calculate personality scores in the backend given `quizTraits` that describe how to calculate them.
 Then, on the frontend, display these scores on a new results page in a simple `trait:numericalScore` format.
@@ -51,7 +56,6 @@ For example - if a user answers 'Disagree' and 'Neither' to questions measuring 
 Why 25%? The average of his answers (0 and 1) is 0.5 which is 25% out of the highest possible score, which is 2.
 
 Example data is available in `mockedData.js`, please use it as a mocked database.
-
 
 ## Good to have
 
