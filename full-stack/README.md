@@ -8,7 +8,7 @@ If you didn't have a chance before, have a look at our [website](https://humanex
 ## Introduction
 Your task is to implement a MERN stack app where users can solve personality tests and get feedback on their answers.
 
-We don't expect you to spend more than `4 hours` on this assignment. We expect the basic functionality to be there within
+We don't expect you to spend more than `4 hours` on both parts of this assignment. We expect the basic functionality to be there within
 this time frame.
 
 If you'd like to challenge yourself and spend more time to polish the app go for it!
