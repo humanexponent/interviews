@@ -68,7 +68,9 @@ Use the quiz data and display it in front end (inside `Test` component).
 ### Feedback page [Second part]
 
 After user completes the test, we want you to display an example feedback (available in `mockedData.js`).
+
 Each quiz has 2 possible feedbacks. We want users to be happy, so we want to display feedback with minScore that is possibly the greatest. 
+
 As an example: if there are 2 feedbacks for one quiz, first with minScore: 0, and second with minScore: 5, and added value of user's answers for that quiz is greater than or equal to 5 we want to display second feedback (minScore: 5) otherwise display first (with minScore: 0).
 
 For this task you should implement both frontend and backend.
