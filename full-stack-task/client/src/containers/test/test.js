@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import CircularProgress from '@material-ui/core/CircularProgress';
-import TestPageHeader from '../../components/TestPageHeader';
-import TestQuestions from '../../components/TestQuestions';
 
 import { useStyles } from "./styles.js";
 
@@ -10,7 +8,7 @@ import {
   getTest as getTestAction,
 } from "../../actions/index";
 
-const Test = ({test, getTest, match, loading, loaded}) => {
+const Test = ({test, getTest, match, loading}) => {
   const classes = useStyles();
 
   useEffect(() => {
@@ -29,15 +27,11 @@ const Test = ({test, getTest, match, loading, loaded}) => {
     Failed to load a test
   </div>
 
+  console.log("Here's how the test object looks like:", test)
+
   return (
     <div className={classes.root}>
-      <TestPageHeader quizData={test.quizData} />
-      <div className='row'>
-        <div className='col'>
-          {test.quizData.description}
-        </div>
-      </div>
-      <TestQuestions testData={test} />
+      Please display questions and answers here
     </div>
   );
 };
@@ -45,7 +39,6 @@ const Test = ({test, getTest, match, loading, loaded}) => {
 const mapStateToProps = (state) => ({
   test: state.test.test,
   loading: state.test.loading,
-  loaded: state.test.loaded,
 });
 
 const mapDispatchToProps = (dispatch) => ({

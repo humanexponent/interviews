@@ -14,7 +14,7 @@ const Tile = ({_id, title}) => {
 
   return (
     <Card
-      key={`personality test ${_id}`}
+      key={title}
       className={classes.root}
     >
       <CardContent>
