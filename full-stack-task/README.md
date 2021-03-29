@@ -60,10 +60,10 @@ If you encounter any issues with the submission please email us (work@humanexpon
 You are about to build a simple psychometric quiz.
 A quiz consists of multiple questions and each question has a set of possible answers.
 
-Your task is to build a view (similar to the presented above `Personality Test Page`) where user can pick an answer for each question in a quiz. 
+Your task is to build a view (similar to the presented above, in `Personality Test Page`) where user can pick an answer for each question in a quiz. 
 We've already implemented a code, which makes a request to backend and returns required questions and related answers.
 
-Use the quiz data and display it in front end (inside `Test` component), the result of this should be similar to what was presented in `Personality Test Page`.
+Use the quiz data and display it in front end (inside `Test` component).
 
 ### Feedback page [Second part]
 
