@@ -31,15 +31,15 @@ randomizeQuizQuestions = (quiz) => {
 }
 
 
-// @route GET api/quizzes/
-// @desc Get an example test
+// @route GET api/tests
+// @desc Get all tests
 // @access Public
 
 router.get("/", (req, res) => {
   res.json(mockedData.quizzes);
 });
 
-// @route GET api/quizzes/:id
+// @route GET api/tests/:id
 // @desc Get a single quiz with related data given quizId
 // @access Public
 
@@ -52,14 +52,38 @@ router.get("/:id", (req, res) => {
 
     const questionsArray = randomizeQuizQuestions(desiredQuiz)
     const shuffledQuestions = shuffleArray(questionsArray)
-  
+
     res.json({
       quizData: desiredQuiz,
       questions: shuffledQuestions,
       answers: mockedData.quizQuestionAnswers
     });
-  
-  } 
+
+  }
+  catch(err) {
+    res.status(404).json({
+      err
+    });
+  }
+});
+
+// @route GET api/tests/feedback/:id
+// @desc Get feedback to a single quiz given quizId
+// @access Public
+
+router.post("/feedback/:id", (req, res) => {
+  try {
+    const score = req.body.score
+    const id = Number(req.params.id)
+
+    const feedbackObject = mockedData.feedbacks
+      .filter(feedback => Number(feedback.quizId) === id && feedback.minScore <= Number(score))
+      .sort(feedback => feedback.minScore)[0]
+
+    res.json({
+      feedback: feedbackObject.value
+    });
+  }
   catch(err) {
     res.status(404).json({
       err
