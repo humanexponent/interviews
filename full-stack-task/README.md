@@ -68,7 +68,7 @@ Use the quiz data and display quiz title, questions and answers in front end (in
 
 After user clicks "Submit Answers" we'd like you to send a request to backend that fetches user feedback. The request should include user score (expressed as a single number). In order to calculate this score you need to sum up all of the values assigned to each answer object. For example, if user gave the following answers to a test: "Disagree", "Strongly disagree" & "Agree", his score would be 4, because 1 + 0 + 3 = 4. (Note that the actual tests have more than 3 questions. This is only an example.)
 
-The endpoint fetching feedback data is `api/quizzes/feedback/:id` and should include a `score` field in its body. Make the request within a new saga (which you can define inside the `sagas` folder). Example post request using axios would look like this:
+The endpoint fetching feedback data is `api/tests/feedback/:id` and should include a `score` field in its body. Make the request within a new saga (which you can define inside the `sagas` folder). Example post request using axios would look like this:
 `axios.post("/api/tests/feedback/1", {score: 5})`
 
 ### Feedback page [Second part]
