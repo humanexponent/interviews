@@ -6,9 +6,9 @@ If you didn't have a chance before, have a look at our [website](https://gyfted.
 
 
 ## Introduction
-Your task is to implement a some part of a simple MERN stack app where users can solve personality tests and get feedback on their answers.
+Your task is to implement part of a simple MERN stack app where users can solve personality tests and get feedback on their answers.
 
-We don't expect you to spend more than `2 hour` on this assignment.
+We don't expect you to spend more than `3 hour` on this assignment.
 
 If you'd like to challenge yourself and spend more time to polish the app go for it!
 We'll be happy to evaluate and give feedback on the whole project once you're done.
@@ -44,7 +44,7 @@ If you encounter any issues with the submission please email us (work@humanexpon
 * Click on `Back` button should take you to `Home Page`.
 * Click on `Submit Answers` button should send results to Backend and redirect you to `Personality Feedback Page`.
 
-### Personality Feedback Page (Front End and small Backend to be implemented)
+### Personality Feedback Page (Front End to be implemented)
 
 ![Personality Test Feedback Page](feedback.png)
 
@@ -60,20 +60,20 @@ If you encounter any issues with the submission please email us (work@humanexpon
 You are about to build a simple psychometric quiz.
 A quiz consists of multiple questions and each question has a set of possible answers.
 
-Your task is to build a view (similar to the presented above, in `Personality Test Page`) where user can pick an answer for each question in a quiz. 
-We've already implemented a code, which makes a request to backend and returns required questions and related answers.
+Your task is to build a view (similar to the presented above, in `Personality Test Page`) where user can pick an answer for each question in a quiz.
+We've already implemented code which makes a request to backend and returns required questions and related answers.
+Each question object sent from backend includes field `quizQuestionAnswers`. This field includes ids of answers that are to be displayed under this particular question. For example, the answers to the first question, "I feel worthless and hopeless.", are: "Strongly disagree", "Disagree", "Neither", "Agree" and "Strongly Agree".  
 
-Use the quiz data and display it in front end (inside `Test` component).
+Use the quiz data and display quiz title, questions and answers in front end (inside `Test` component). Don't forget to include the submit button and the back button as well.
+
+After user clicks "Submit Answers" we'd like you to send a request to backend that fetches user feedback. The request should include user score (expressed as a single number). In order to calculate this score you need to sum up all of the values assigned to each answer object. For example, if user gave the following answers to a test: "Disagree", "Strongly disagree" & "Agree", his score would be 4, because 1 + 0 + 3 = 4. (Note that the actual tests have more than 3 questions. This is only an example.)
+
+The endpoint fetching feedback data is `api/quizzes/feedback/:id` and should include a `score` field in its body. Make the request within a new saga (which you can define inside the `sagas` folder). Example post request using axios would look like this:
+`axios.post("/api/tests/feedback/1", {score: 5})`
 
 ### Feedback page [Second part]
 
-After user completes the test, we want you to display an example feedback (available in `mockedData.js`).
-
-Each quiz has 2 possible feedbacks. We want users to be happy, so we want to display feedback with minScore that is possibly the greatest. 
-
-As an example: if there are 2 feedbacks for one quiz, first with minScore: 0, and second with minScore: 5, and added value of user's answers for that quiz is greater than or equal to 5 we want to display second feedback (minScore: 5) otherwise display first (with minScore: 0).
-
-For this task you should implement both frontend and backend.
+After user clicks "Submit Answers" he/she should be redirected to feedback page where specific feedback (fetched from backend) is displayed. This is a very simple view containing only a title and feedback (single string) displayed below.
 
 ## Good to have
 

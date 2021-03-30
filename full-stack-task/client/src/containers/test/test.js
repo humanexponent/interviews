@@ -23,11 +23,15 @@ const Test = ({test, getTest, match, loading}) => {
     )
   }
 
-  if (!test) return <div className={classes.root}>
-    Failed to load a test
-  </div>
+  if (!test) {
+    return (
+      <div className={classes.root}>
+        Failed to load a test
+      </div>
+    )
+  }
 
-  console.log("Here's how the test object looks like:", test)
+  console.log("Here's what the test object looks like:", test)
 
   return (
     <div className={classes.root}>

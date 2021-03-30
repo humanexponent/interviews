@@ -2,37 +2,37 @@
 const quizzes = [
   {
     _id: 1,
-    title: "Test Example 1",
+    title: "Personality Test # 1",
     description: "Discover your personality based on the 10-item test",
     numberOfQuestions: 10,
   },
   {
     _id: 2,
-    title: "Test Example 2",
+    title: "Personality Test # 2",
     description: "Discover your personality based on the 2-item test",
     numberOfQuestions: 2,
   },
   {
     _id: 3,
-    title: "Test Example 3",
+    title: "Personality Test # 3",
     description: "Discover your personality based on the 3-item test",
     numberOfQuestions: 3,
   },
   {
     _id: 4,
-    title: "Test Example 4",
+    title: "Personality Test # 4",
     description: "Discover your personality based on the 2-item test",
     numberOfQuestions: 2,
   },
   {
     _id: 5,
-    title: "Test Example 5",
+    title: "Personality Test # 5",
     description: "Discover your personality based on the 3-item test",
     numberOfQuestions: 3,
   },
   {
     _id: 6,
-    title: "Test Example 6",
+    title: "Personality Test # 6",
     description: "Discover your personality based on the 4-item test",
     numberOfQuestions: 2,
   },
