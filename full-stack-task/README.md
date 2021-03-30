@@ -62,7 +62,7 @@ A quiz consists of multiple questions and each question has a set of possible an
 
 Your task is to build a view (similar to the presented above, in `Personality Test Page`) where user can pick an answer for each question in a quiz.
 We've already implemented code which makes a request to backend and returns required questions and related answers.
-Each question object sent from backend includes field quizQuestionAnswers. This field includes ids of answers that are to be displayed under this particular question. For example, the answers to the first question, "I feel worthless and hopeless.", are: "Strongly disagree", "Disagree", "Neither", "Agree" and "Strongly Agree".  
+Each question object sent from backend includes field `quizQuestionAnswers`. This field includes ids of answers that are to be displayed under this particular question. For example, the answers to the first question, "I feel worthless and hopeless.", are: "Strongly disagree", "Disagree", "Neither", "Agree" and "Strongly Agree".  
 
 Use the quiz data and display quiz title, questions and answers in front end (inside `Test` component). Don't forget to include the submit button and the back button as well.
 
