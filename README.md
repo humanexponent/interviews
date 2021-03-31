@@ -1,1 +1,1 @@
-# [Front-End Intern Recruitment Task](full-stack-task)
+# [Front-End Intern Recruitment Task](front-end-intern)
