@@ -8,7 +8,7 @@ If you didn't have a chance before, have a look at our [website](https://gyfted.
 ## Introduction
 Your task is to implement part of a simple MERN stack app where users can solve personality tests and get feedback on their answers.
 
-We don't expect you to spend more than `3 hour` on this assignment.
+We don't expect you to spend more than `3 hours` on this assignment.
 
 If you'd like to challenge yourself and spend more time to polish the app go for it!
 We'll be happy to evaluate and give feedback on the whole project once you're done.
