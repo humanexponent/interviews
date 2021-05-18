@@ -8,7 +8,7 @@ If you didn't have a chance before, have a look at our [website](https://gyfted.
 ## Introduction
 Your task is to implement part of a simple MERN stack app where users can solve personality tests and get feedback on their answers.
 
-We don't expect you to spend more than `3 hours` on this assignment.
+We don't expect you to spend more than `2.5 hours` on this assignment.
 
 If you'd like to challenge yourself and spend more time to polish the app go for it!
 We'll be happy to evaluate and give feedback on the whole project once you're done.
@@ -16,7 +16,7 @@ We'll be happy to evaluate and give feedback on the whole project once you're do
 ### Github setup
 
 Please create a private Github repository and add us as collaborators (work@humanexponent.com) once you're ready to share.
-If you encounter any issues with the submission please email us (work@humanexponent.com or adam@humanexponent.com)
+If you encounter any issues with the submission please email us (work@humanexponent.com or adam@gyfted.me)
 
 ### App setup
 
@@ -35,7 +35,7 @@ Already done:
 * Each test has a set of questions. For each question there is a set of possible answers.
 
 To be done:
-* Checkbox on top. If checked, quizzes should be order by key numberOfQuestions. Otherwise, they should be ordered by name.
+* Checkbox on top. If checked, quizzes should be order by key: numberOfQuestions. Otherwise, they should be ordered by key: name.
 
 ### Personality Test Page (Front End to be implemented)
 
@@ -58,7 +58,7 @@ To be done:
 * It includes text with feedback to a particular personality test given user's result.
 * Use the feedbacks provided in `mockData.js` for each test.
 
-
+### Button Styles
 
 ![Styling](button.png)
 
@@ -86,7 +86,7 @@ After user clicks "Submit Answers" we'd like you to send a request to backend th
 The endpoint fetching feedback data is `api/tests/feedback/:id` and should include a `score` field in its body. Make the request within a new saga (which you can define inside the `sagas` folder). Example post request using axios would look like this:
 `axios.post("/api/tests/feedback/1", {score: 5})`
 
-Finally, style all the buttons according to the provided design.
+Finally, try to style all the buttons according to the provided design.
 
 ### Feedback page [Second part]
 
