@@ -35,7 +35,7 @@ Already done:
 * Each test has a set of questions. For each question there is a set of possible answers.
 
 To be done:
-* Checkbox on top. If checked, quizzes should be order by key: numberOfQuestions. Otherwise, they should be ordered by key: name.
+* Checkbox on top. If checked, quizzes should be order by key: numberOfQuestions. Otherwise, they should be ordered by key: title.
 
 ### Personality Test Page (Front End to be implemented)
 
