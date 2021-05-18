@@ -58,6 +58,8 @@ To be done:
 * It includes text with feedback to a particular personality test given user's result.
 * Use the feedbacks provided in `mockData.js` for each test.
 
+
+
 ![Styling](button.png)
 
 * Make all the buttons look like in the above design
