@@ -1,85 +1,107 @@
-# Front-End Developer Recruitment Task
+# Frontend Internship Recruitment Task
 
-Thank you for taking time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
+Thank you for taking the time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
+
+If you didn't have a chance before, have a look at our [website](https://gyfted.me/) to get a deeper understanding of what we're building at Gyfted.
+
 
 ## Introduction
-Your task is to implement a React app where users can solve personality tests and get feedback on their answers.
+Your task is to implement part of a simple MERN stack app where users can solve personality tests and get feedback on their answers.
 
-We don't expect you to spend more than `2 hours` on this assignment. We expect the basic functionality to be there within
-this time frame.
+We don't expect you to spend more than `3 hours` on this assignment.
 
 If you'd like to challenge yourself and spend more time to polish the app go for it!
 We'll be happy to evaluate and give feedback on the whole project once you're done.
 
-## Setup and submission
-
 ### Github setup
 
 Please create a private Github repository and add us as collaborators (work@humanexponent.com) once you're ready to share.
-If you encounter any issues with the submission please email us.
+If you encounter any issues with the submission please email us (work@humanexponent.com or adam@humanexponent.com)
 
 ### App setup
 
-* Starter: https://github.com/facebook/create-react-app
-* Please include any extra instructions how to run your app in a `README.md` file if necessary
+* Clone current repository and use it as the starter.
+* Run `npm install` in **main folder** and **client folder** to install dependencies.
+* Run `npm run dev` to run the app locally.
 
 ## Screens
 
-### Home Page
-
+### Home Page (partly implemented)
 ![Homepage](main_page.png)
 
+Already done:
 * List of personality tests to solve.
-* On `Start` click redirect to `Personality Test` page.
-* You can assume that each test has the same name, questions and possible answers,
- but differs only by an id (e.g. `Personality Test #1` vs `Personality Test #2`).
+* On `Start` click redirect to specific `Personality Test` page.
+* Each test has a set of questions. For each question there is a set of possible answers.
 
-### Personality Test Page
+To be done:
+* Checkbox on top. If checked, quizzes should be order by key numberOfQuestions. Otherwise, they should be ordered by name.
+
+### Personality Test Page (Front End to be implemented)
 
 ![Personality Test Page](personality_test.png)
 
 * This page contains a list of questions and possible answers to a personality test.
 * It includes the title of a personality test at the top.
 * Assume that it's possible to select only one answer under each question.
-* Assume that the set of possible answers to any questions is the same (agree / neither agree nor disagree / disagree).
+* The set of possible answers to questions might be different.
 * Click on `Back` button should take you to `Home Page`.
-* Click on `Submit Answers` button should redirect you to `Personality Feedback Page`.
+* Click on `Submit Answers` button should send results to Backend and redirect you to `Personality Feedback Page`.
+* Click on `Clear all answers` to clear all answers that have already been selected.
 
-### Personality Feedback Page
+### Personality Feedback Page (Front End to be implemented)
 
 ![Personality Test Feedback Page](feedback.png)
 
 * This page contains feedback on answers to a particular personality test.
 * It includes the title of the feedback for a particular personality test at the top.
-* It includes text with feedback based on the answers to a particular personality test.
-* Assume you can hardcode the text of the feedback but in the back-end it should vary
-  depending on the personality test chosen and answers given by a user.
+* It includes text with feedback to a particular personality test given user's result.
+* Use the feedbacks provided in `mockData.js` for each test.
 
-## Must have
+![Styling](button.png)
 
-1. Use React & Redux.
-2. Use of react-router for multiple pages.
+* Make all the buttons look like in the above design
+
+## Task
+
+### Psychometric test [First part]
+
+You are about to build a simple psychometric quiz.
+A quiz consists of multiple questions and each question has a set of possible answers.
+
+Firstly, your task is to add checkbox on top of the first view. If checked, quizzes should be order by key numberOfQuestions.
+Otherwise, they should be ordered by name.
+
+Second, build a view (similar to the presented above, in `Personality Test Page`) where user can pick an answer for each question in a quiz.
+We've already implemented code which makes a request to backend and returns required questions and related answers.
+Each question object sent from backend includes field `quizQuestionAnswers`. This field includes ids of answers that are to be displayed under this particular question. For example, the answers to the first question, "I feel worthless and hopeless.", are: "Strongly disagree", "Disagree", "Neither", "Agree" and "Strongly Agree".  
+
+Use the quiz data and display quiz title, questions and answers in front end (inside `Test` component). Don't forget to include the submit button, clear all button and the back button as well.
+
+After user clicks "Submit Answers" we'd like you to send a request to backend that fetches user feedback. The request should include user score (expressed as a single number). In order to calculate this score you need to sum up all of the values assigned to each answer object. For example, if user gave the following answers to 3 test questions: "Disagree", "Strongly disagree" & "Agree", according to answer objects his score would be 4, because values for those answers sum up to 4, like so: 1 + 0 + 3 = 4.
+(Note that the actual tests have more than 3 questions. This is only an example.)
+
+The endpoint fetching feedback data is `api/tests/feedback/:id` and should include a `score` field in its body. Make the request within a new saga (which you can define inside the `sagas` folder). Example post request using axios would look like this:
+`axios.post("/api/tests/feedback/1", {score: 5})`
+
+Finally, style all the buttons according to the provided design.
+
+### Feedback page [Second part]
+
+After user clicks "Submit Answers" he/she should be redirected to feedback page where specific feedback (fetched from backend) is displayed. This is a very simple view containing only a title and feedback (single string) displayed below.
 
 ## Good to have
 
 1. Clean code (linters, prettier)
 2. UI kit for styles (or styled-components)
-3. Tests
-4. Exception handling
-5. Usage of modern js functionality (ES6+)
-6. Deployed app
+3. Usage of modern js functionality (ES6+)
+4. Deployed app
 
 ## What will we be paying attention to:
 * Can we run your code?
 * Can we understand your code?
 * How you architected your app, e.g. how you split the code into components.
 * If / how did you make your components reusable.
-* How and where you put your business logic.
 
 ## What we'll be paying less attention to:
 * For this assignment we're less interested in how pretty the app looks like, but rather how functional and reliable it is.
-
-
-
-
-
