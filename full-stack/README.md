@@ -8,7 +8,7 @@ If you didn't have a chance before, have a look at our [website](http://gyfted.m
 ## Introduction
 Your task is to implement a MERN stack app where users can solve personality tests and get feedback on their answers.
 
-We don't expect you to spend more than `4 hours` on both parts of this assignment. We expect the basic functionality to be there within
+We don't expect you to spend more than `3 hours` on both parts of this assignment. We expect the basic functionality to be there within
 this time frame.
 
 If you'd like to challenge yourself and spend more time to polish the app go for it!
@@ -30,27 +30,28 @@ If you encounter any issues with the submission please email us.
 ### Psychometric test
 
 Your task is to build a simple psychometric quiz.
-A test consists of multiple questions and each question has a set of possible answers.
+A test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
 
-There's no one correct answer to a personality test question.
+There's no correct answer to a personality test question.
 Each possible answer has a corresponding value, e.g. 'Strongly disagree' has a value of `0` and 'Strongly Agree' has a value of `4`.
 Let's also assume that each personality score is calculated as the average of all the answers related to it.
 
 Notice that displaying the same questions in the same order may encourage some users to game the system and pick the answers that lead to their desired score values.
 To make it difficult to cheat we have a bigger set of questions for each score that we sample from. E.g. for the example test we have 24 possible questions but only 10 are required. 
 
-Your task is to generate a personality quiz with randomly picked questions in each index.
-Once you pick the questions in the index you should also randomly shuffle quiz questions and pass them to the front end.
+Your task is to *generate a personality quiz with randomly picked questions in each index.
+Once you pick the questions in the index you should also randomly shuffle quiz questions and pass them to the front end.*
 
 The way you structure the quiz object (sent as a response) is up to you, but make it a single object that holds basic quiz data and both questions and answers.
 
-Send quiz data as a response and display it in front end (inside Test component) as a set of questions and possible answers that user can answer.
+*Send quiz data as a response and display it in front end (inside Test component) as a set of questions and possible answers that user can answer.*
 
 ## Task [Second part]
 
 After user completes the test, send it to the backend. Again, the structure of this post request is up to you.
-Calculate personality scores in the backend given `quizTraits` that describe how to calculate them.
-Then, on the frontend, display these scores on a new results page in a simple `trait:numericalScore` format.
+
+*Calculate personality scores in the backend* given `quizTraits` that describe how to calculate them.
+Then, on the frontend, *display these scores on a new results page in a simple `trait:numericalScore` format.*
 
 For example - if a user answers 'Disagree' and 'Neither' to questions measuring Openness - he should see "Openness: 25%" on the result page.
 Why 25%? The average of his answers (0 and 1) is 0.5 which is 25% out of the highest possible score, which is 2.
