@@ -2,7 +2,7 @@
 
 Thank you for taking the time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
 
-If you didn't have a chance before, have a look at our [website](https://humanexponent.herokuapp.com/) to get a deeper understanding of what we're building at Human^.
+If you didn't have a chance before, have a look at our [website](http://gyfted.me/) to get a deeper understanding of what we're building at Gyfted.
 
 
 ## Introduction
