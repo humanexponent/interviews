@@ -28,8 +28,7 @@ If you encounter any issues with the submission please email us.
 
 ### Psychometric test
 
-Your task is to build a simple psychometric quiz.
-A test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
+Your task is to build a simple psychometric quiz. The test should be fetched using `/api/tests/:test_id` (in 'src/sagas/test.js'), which is executed after user clicks on a test tile. A test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
 
 There's no correct answer to a personality test question.
 Each possible answer has a corresponding value, e.g. 'Strongly disagree' has a value of `0` and 'Strongly Agree' has a value of `4`.
