@@ -52,7 +52,7 @@ After user completes the test, send it to the backend. Again, the structure of t
 *Calculate personality scores in the backend* given `quizTraits` that describe how to calculate them.
 Then, on the frontend, *display these scores on a new results page in a simple `trait:numericalScore` format.*
 
-For example - if a user answers 'Disagree' and 'Neither' to questions measuring Openness - he should see "Openness: 25%" on the result page.
+For example - if a user answers 'Disagree' (value: 0) and 'Neither' (value: 1) to questions measuring Openness - he should see "Openness: 25%" on the result page.
 Why 25%? The average of his answers (0 and 1) is 0.5 which is 25% out of the highest possible score, which is 2.
 
 Example data is available in `mockedData.js`, please use it as a mocked database.
