@@ -8,7 +8,7 @@ If you didn't have a chance before, have a look at our [website](https://gyfted.
 ## Introduction
 Your task is to implement a small script, which will allow our psychometricians to see how quizzes are built in the system (what questions are in the quiz etc).
 
-### Let us introduce some words, which will make the task easier to understand.
+### Let us introduce one word, which will make the task easier to understand.
 Trait - psychological measure, may be directly or indirectly calculated from the questions.
 E.g. to calculate "a big trait" such as 'openness to experience' we need 'smaller' traits such as 'positive thinking' or 'sociability'. 
 
