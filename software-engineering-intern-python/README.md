@@ -27,13 +27,13 @@ Build a script, which will create a list of descriptions of a quiz in a similar 
 To test your solution use `mockData.json`.
 
 ### Example
-Big 5 - openness to experience - positive thinking - question # 1
+Quiz #1 - Subtrait 8 - Trait 1 - Question #1
 
-Big 5 - openness to experience - positive thinking - question # 2
+Quiz #1 - Subtrait 9 - Trait 1 - Question #2
 
-Big 5 - openness to experience - sociability - question # 3
+Quiz #1 - Subtrait 11 - Trait 1 - Question #3
 
-Big 5 20-item - openness to experience - sociability - question # 4
+Quiz #1 - Subtrait 11- Trait 1 -Question #4
 
 ## Bonus Task #1
 If you're up for more challenges, there's a bonus task as well. Our psychometricians would benefit from being able to search and sort the data. Implement a set of functions that one could use to alphanumerically sort along a chosen 'dimension': quiz, trait, subtrait or question id. 
