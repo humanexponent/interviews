@@ -14,7 +14,7 @@ E.g. to calculate "a big trait" such as 'openness to experience' we need 'smalle
 
 To be precise let's call 'opennes to experience' - (parent) trait, and 'positivte thinking' & 'sociability' subtraits.
 
-In each subtrait object we hold the information about it's parent trait. From the example above 'positivte thinking' will hold the id of the 'openness to experiences' trait in parentTraitId.
+In each subtrait object we hold the information about it's parent trait. From the example above 'positivte thinking' will hold id of the 'openness to experiences' trait in parentTraitId.
  
 
 Each quiz contains from a few parent traits and subtraits.
