@@ -28,8 +28,11 @@ To test your solution use `mockData.json`.
 
 ### Example
 Big 5 - openness to experience - positive thinking - question # 1
+
 Big 5 - openness to experience - positive thinking - question # 2
+
 Big 5 - openness to experience - sociability - question # 3
+
 Big 5 20-item - openness to experience - sociability - question # 4
 
 ## Bonus Task #1
