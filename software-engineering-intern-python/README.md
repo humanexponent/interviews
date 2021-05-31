@@ -25,6 +25,13 @@ For simplicity let's assume that each question (unique by id) may appear only in
 Build a script, which will produce a description of a quiz in a similar form to: `Quiz name - parent trait name - child trait name - question label` for all questions in all quizzes.
 To test your solution use `mockData.json`.
 
+### Example
+Big 5 - openness to experience - positive thinking - question # 1
+Big 5 - openness to experience - positive thinking - question # 2
+Big 5 - openness to experience - sociability - question # 3
+Big 5 20-item - openness to experience - sociability - question # 4
+
+
 We'll be happy to evaluate and give feedback on the whole project once you're done.
 
 ### Github setup
