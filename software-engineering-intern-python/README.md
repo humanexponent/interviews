@@ -23,7 +23,7 @@ For simplicity let's assume that each question (unique by id) may appear only in
 Each question object will hold an information about the subtrait it's related to and an id of a quiz it appears in.
 
 ## Task
-Build a script, which will create a list of descriptions of a quiz in a similar form to: `Quiz name - parent trait name - child trait name - question label` for all questions in all quizzes.
+Build a script, which will create a list of descriptions of a quiz in a similar form to: `Quiz title - parent trait label - subtrait label - question label` for all questions in all quizzes.
 To test your solution use `mockData.json`.
 
 ### Example
