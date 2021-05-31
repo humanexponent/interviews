@@ -32,8 +32,14 @@ Big 5 - openness to experience - positive thinking - question # 2
 Big 5 - openness to experience - sociability - question # 3
 Big 5 20-item - openness to experience - sociability - question # 4
 
+## Bonus Task #1
+If you're up for more challenges, there's a bonus task as well. Our psychometricians would benefit from being able to search and sort the data. Implement a set of functions that one could use to alphanumerically sort along a chosen 'dimension': quiz, trait, subtrait or question id. 
 
-We'll be happy to evaluate and give feedback on the whole project once you're done.
+## Bonus Task #2
+Implement a back-end interface to keep track of all the quizzes and allow for adding or removing quizzes. 
+
+## Feedback
+We'll be happy to evaluate and give feedback on the whole project once you're done. What we care about the most in this assignment is correctness of the solution and whether the code is easy to read and understand. Bonus tasks are bonus tasks, don't feel pressured to spend too much time on them if you decide to attempt them.
 
 ### Github setup
 
