@@ -17,7 +17,7 @@ To be precise let's call 'opennes to experience' - (parent) trait, and 'positivt
 In each subtrait object we hold the information about it's parent trait. From the example above 'positivte thinking' will hold id of the 'openness to experiences' trait in parentTraitId.
  
 
-Each quiz contains from a few parent traits and subtraits.
+Each quiz contains a few parent traits and subtraits.
 Traits can directly or indirectly be calculated from the questions.
 For simplicity let's assume that each question (unique by id) may appear only in one quiz and we hold the information about which question is in which quiz in question object.
 
