@@ -1,4 +1,4 @@
-# Full-Stack Developer Recruitment Task
+# Backend Developer Recruitment Task
 
 Thank you for taking the time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
 
@@ -29,7 +29,7 @@ If you encounter any issues with the submission please email us.
 
 ### Psychometric test
 
-Your first task is to build a simple psychometric quiz. The test should be fetched using `/api/tests/:id` (in `routes/api/quizzes.js`), which is executed after user clicks on a test tile. 
+Your first task is to build a simple psychometric quiz. The test should be fetched using `/api/tests/:id` (in `routes/api/quizzes.js`), which is executed after user clicks on a test tile.
 A test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
 
 There's no correct answer to a personality test question.
