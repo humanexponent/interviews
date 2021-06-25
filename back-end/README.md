@@ -40,7 +40,7 @@ To make it difficult to cheat we have a bigger set of questions for each score t
 
 Your task is to *generate a personality quiz with randomly picked questions in each index.
 Once you pick the questions in the index you should also randomly shuffle quiz questions and pass them to the front end.
-Additionally, return all the answer objects for each quiz question in the `answers` key.*
+Additionally, make sure that each quiz question includes answers as objects as opposed to just ids. Frontend will need details regarding each answer in order to display them. Insert those answer objects into the `answers` key.*
 You can find a correctly formatted response in `routes/api/quizzes.js`.
 
 ## Task [Second part]
