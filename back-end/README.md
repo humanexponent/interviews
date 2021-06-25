@@ -29,27 +29,25 @@ If you encounter any issues with the submission please email us.
 
 ### Psychometric test
 
-Your first task is to build a simple psychometric quiz. The test should be fetched using `/api/tests/:id` (in `routes/api/quizzes.js`), which is executed after user clicks on a test tile.
-A test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
+Your first task is to build a simple psychometric test object in the backend. The test is being fetched using `/api/tests/:id` (in `routes/api/quizzes.js`), which is executed after user clicks on a test tile. The test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
 
 There's no correct answer to a personality test question.
 Each possible answer has a corresponding value, e.g. 'Strongly disagree' has a value of `0` and 'Strongly Agree' has a value of `4`.
 
-Notice that displaying the same questions in the same order may encourage some users to game the system and pick the answers that lead to their desired score values.
-To make it difficult to cheat we have a bigger set of questions for each score that we sample from. E.g. we have 27 possible quiz questions in `mockedData.js` but only 10 are required.
+Notice that displaying the same questions in the same order may encourage some users to game the system and pick the answers that lead to their desired score values. To make it difficult to cheat we have a bigger set of questions for each score that we sample from. E.g. we have 27 possible quiz questions in `mockedData.js` but only 10 are to be sent to the frontend.
 
-Your task is to *generate a personality quiz with randomly picked questions in each index.
-Once you pick the questions in the index you should also randomly shuffle quiz questions and pass them to the front end.
-Additionally, make sure that each quiz question includes answers as objects as opposed to just ids. Frontend will need details regarding each answer in order to display them. Insert those answer objects into the `answers` key.*
+Your task is to *generate a personality quiz with randomly picked questions in each index. (See the `index` key in quizQuestions.)
+Once you pick the questions for each index, 10 in total, you should also randomly shuffle quiz questions and pass them to the frontend.
+Additionally, make sure that each quiz question includes answers as objects as opposed to just id-s. Frontend will need details regarding each answer in order to display them. Insert those answer objects into the `answers` key.*
 You can find a correctly formatted response in `routes/api/quizzes.js`.
 
 ## Task [Second part]
 
-After user completes the test, it is sent to backend.
+After user completes the test, the answers are sent to backend.
 
-*Calculate personality scores in the backend* given `quizTraits` that describe which questions you need for which trait. Eech personality score is calculated as the average of all the answers related to it.
+*Calculate personality scores in the backend* given `quizTraits` that describe which questions you need for calculating which trait. Eech personality trait score is calculated as the average of all the answers related to those questions.
 
-For example - if a user answers 'Neither' (value: 2 out of 4 possible answers) and 'Agree' (value: 2 out of 2 possible answers) to questions measuring Extraversion - he should see "Extraversion: 75%" on the result page. Why 75%? First answer gives him 50% and the second answer 100%. The average of the two is 75%.
+For example, extraversion is measured by two questions: first with 5 answers, second with 3 answers. If a user answers 'Neither' (value: 2 out of max 4) and 'Agree' (value: 2 out of max 2) to questions measuring Extraversion - he should see "Extraversion: 75%" on the result page. Why 75%? First answer gives him 50% and the second answer 100%. The average of the two is 75%.
 Again, you can find a correctly formatted response in `routes/api/quizzes.js`.
 
 ## What will we be paying attention to:
