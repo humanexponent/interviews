@@ -25,6 +25,7 @@ If you encounter any issues with the submission please email us.
 * Run `npm run dev` to run the app locally.
 * You should see a working version of the app, with fake/example data returned from backend.
 
+
 ## First part of the task - Psychometric test
 
 Your first task is to build a simple psychometric test object in the backend. The test is being fetched using `/api/tests/:id` (in `routes/api/quizzes.js`), which is executed after user clicks on a test tile. The test consists of multiple questions and each question has a set of possible answers. Have a look at mocked data in `mockedData.js` file.
