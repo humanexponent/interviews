@@ -1,4 +1,4 @@
-# Frontend Internship Recruitment Task
+# Frontend Recruitment Task
 
 Thank you for taking the time to solve this assignment! We're excited to see what you will build and hope you'll have some fun along the way!
 
