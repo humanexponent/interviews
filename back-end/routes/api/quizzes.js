@@ -26,6 +26,7 @@ router.get("/:id", (req, res) => {
         index: 1,
         label: "I sympathize with others’ feelings.",
         quizId: 1,
+        _id: 123,
         answers: [{_id: 15, value: "0", label: "Disagree"}, {_id: 16, value: "1", label: "Neither"}, {_id: 17, value: "2", label: "Agree"}]
       }
       // quizQuestions should contain 10 questions instead of 1
